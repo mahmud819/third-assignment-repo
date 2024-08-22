@@ -8,15 +8,32 @@
      
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
-
+<!-- font awesome link -->
+<script src="https://kit.fontawesome.com/0d7f844348.js" crossorigin="anonymous"></script>
+<!-- custom color link -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'butten-primary': 'rgb(171, 239, 95)',
+          'btn-second': 'rgba(171, 239, 95, 0.5)',
+          'bg-icon': 'rgb(255, 255, 255)',
+          'icon-border': 'rgb(233, 233, 233)',
+        }
+      }
+    }
+  }
+</script>
 </head>
 <body>
     <!-- header section -->
-     <header>
+     <header class="px-32">
       <!-- nav area -->
-        <div class="navbar bg-base-100">
+        <div class="navbar">
             <div class="navbar-start">
-              <a class="btn btn-ghost text-xl">Rinterio</a>
+              <a class="btn btn-ghost text-xl"><i class="fa-solid fa-arrow-right -rotate-45 bg-butten-primary p-1 rounded-full"></i>Rinterio</a>
             </div>
             <div class="navbar-center flex">
               <ul class="menu menu-horizontal px-1">
@@ -28,30 +45,29 @@
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn">Book Consult</a>
+              <i class="fa-solid fa-magnifying-glass p-2"></i>
+              <i class="fa-solid fa-cart-shopping p-3 bg-bg-icon"></i>
+              <a class="btn bg-butten-primary">Book Consult</a>
             </div>
           </div>
 
           <!-- hero secton -->
           
-          <div class="hero bg-base-200 min-h-screen">
-            <div>
-              <img src="images/banner.png" alt="">
-            </div>
-            <div class="hero-content text-center">
-              <div class="max-w-md">
-                <h1 class="text-5xl font-bold">Hello there</h1>
-                <p class="py-6">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                  quasi. In deleniti eaque aut repudiandae et a id nisi.
+          <div class="hero ">
+            <div class="hero-content sm:flex-col flex-row">
+              <img src="./images/banner.png" alt="">
+              <div class="w-100% mx-auto text-center">
+                <h1 class="text-6xl font-bold ">A barn house of this design has a <br>striking appearance</h1>
+                <p class="py-8">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                 </p>
-                <button class="btn btn-primary">Get Started</button>
+                <button class="btn bg-btn-second rounded-3xl">Get Started <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
               </div>
             </div>
           </div>
      </header>
      <!-- main section -->
-      <main>
+      <main class="px-32">
 
       </main>
       <!-- footer section -->
