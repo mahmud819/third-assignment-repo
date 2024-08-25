@@ -21,6 +21,10 @@
           'btn-second': 'rgba(171, 239, 95, 0.5)',
           'bg-icon': 'rgb(255, 255, 255)',
           'icon-border': 'rgb(233, 233, 233)',
+          'process-card1': 'rgb(231, 193, 211)',
+          'process-card2': 'rgb(239, 218, 110)',
+          'process-card3': 'rgb(164, 218, 195)',
+          'process-card4': 'rgb(119, 170, 234)',
         }
       }
     }
@@ -29,23 +33,26 @@
 </head>
 <body>
     <!-- header section -->
-     <header class="px-32">
+     <header class="px-32 mb-20">
       <!-- nav area -->
-        <div class="navbar">
-            <div class="navbar-start">
+        <div class="navbar justify-between">
+            <div class="">
               <a class="btn btn-ghost text-xl"><i class="fa-solid fa-arrow-right -rotate-45 bg-butten-primary p-1 rounded-full"></i>Rinterio</a>
             </div>
-            <div class="navbar-center flex">
-              <ul class="menu menu-horizontal px-1">
+            <div class="navbar-center flex sm : hidden lg:block">
+              <ul class="menu menu-horizontal px-1 ">
                 <li><a>Home</a></li>
                 <li><a href="">Services</a></li>
                 <li><a>Protfolio</a></li>
                  <li><a>Blogs</a></li>
                 <li><a>Contact Us</a></li>
+                
               </ul>
+              
             </div>
-            <div class="navbar-end">
-              <i class="fa-solid fa-magnifying-glass p-2"></i>
+            <i class="fa-solid fa-bars lg:hidden sm:block "></i>
+            <div class="">
+              <i class="fa-solid fa-magnifying-glass p-2 "></i>
               <i class="fa-solid fa-cart-shopping p-3 bg-bg-icon"></i>
               <a class="btn bg-butten-primary">Book Consult</a>
             </div>
@@ -53,22 +60,141 @@
 
           <!-- hero secton -->
           
-          <div class="hero ">
-            <div class="hero-content sm:flex-col flex-row">
+          <div class="hero sm:grid-cols-1">
+            <div class="hero-content flex-row sm:flex-col">
               <img src="./images/banner.png" alt="">
               <div class="w-100% mx-auto text-center">
                 <h1 class="text-6xl font-bold ">A barn house of this design has a <br>striking appearance</h1>
                 <p class="py-8">
                   The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                 </p>
-                <button class="btn bg-btn-second rounded-3xl">Get Started <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+                <button class="btn bg-btn-second rounded-3xl font-bold text-xl">View Details <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
               </div>
             </div>
           </div>
      </header>
-     <!-- main section -->
-      <main class="px-32">
 
+     <!-- main section -->
+
+      <main class="px-0">
+
+        <!-- liveable space section -->
+
+         <div class="liveable-space bg-base-200 px-32 pt-20 relative">
+          <div class="vector absolute top-6 left-24">
+            <img src="./images/Vector.png" alt="">
+          </div>
+          <div class="hero ">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <img
+                src="./images/Rectangle.png"
+                class="w-1/2  rounded-lg" />
+              <div>
+                <button class="btn bg-white rounded-3xl text-base mb-4"><i class="fa-solid fa-arrow-right"></i>About Us</button>
+                <h1 class="text-4xl font-bold">We design thoughtful, liveable spaces</h1>
+                <p class="py-6">
+                  The barn house captivates with its blend of rustic charm and 
+                  modern sophistication, featuring weathered wood, sleek metal accents.
+                </p>
+  
+                <!-- commercial section -->
+  
+                <div class="hero bg-white rounded-2xl">
+                  <div class="hero-content flex-row ">
+                    <img
+                      src="./images/commercial.png"
+                      class="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                      <h1 class="text-xl font-bold">Commercial</h1>
+                      <p class="py-1">
+                        The barn house captivates with its blend of rustic charm and modern.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- residential section -->
+  
+                <div class="hero bg-white rounded-2xl my-3">
+                  <div class="hero-content flex-row">
+                    <img
+                      src="./images/residential.png"
+                      class="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                      <h1 class="text-xl font-bold">Residential</h1>
+                      <p class="py-1">
+                        The barn house captivates with its blend of rustic charm and modern.
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+
+         <!-- count area -->
+
+
+         <!-- work process section -->
+         <div class="work-process-area ">
+          
+            <div class="hero bg-base-200 block text-center px-32 pt-20">
+              <button class="btn bg-white rounded-3xl text-xl "><i class="fa-solid fa-arrow-right"></i>View Details</button>
+            <div class="hero-content text-center">
+              <div class="w-2/3">
+                <h1 class="text-5xl font-bold">Our Works Process</h1>
+                <p class="py-6">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                </p>
+              </div>
+            </div>
+
+            <!-- work process card -->
+            <div class="process-card flex pb-20">
+              <div class="card bg-process-card1 w-1/4 shadow-xl mx-2 ">
+                <div class="card-body text-left">
+                  <div class="card-img">
+                    <img src="./images/concept.png" alt="">
+                  </div>
+                  <h2 class="card-title">Concept</h2>
+                  <p class="text-sm">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+              <div class="card bg-process-card2 w-1/4 shadow-xl mx-2">
+                <div class="card-body text-left">
+                  <div class="card-img">
+                    <img src="./images/flow-chart.png" alt="">
+                  </div>
+                  <h2 class="card-title">Design Process</h2>
+                  <p class="text-sm">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+              <div class="card bg-process-card3 w-1/4 shadow-xl mx-2">
+                <div class="card-body text-left">
+                  <div class="card-img">
+                    <img src="./images/vision.png" alt="">
+                  </div>
+                  <h2 class="card-title">Supervision</h2>
+                  <p class="text-sm">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+              <div class="card bg-process-card4 w-1/4 shadow-xl mx-2">
+                <div class="card-body text-left">
+                  <div class="card-img">
+                    <img src="./images/budget-planning.png" alt="">
+                  </div>
+                  <h2 class="card-title">Budgt Planing</h2>
+                  <p class="text-sm">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+         </div>
+         
+        
       </main>
       <!-- footer section -->
        <footer>
