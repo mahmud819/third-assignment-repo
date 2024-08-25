@@ -7,6 +7,22 @@
     <!-- daisy ui link -->
      
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+<!-- style -->
+
+<style>
+  .discuss-area{
+    background-image: url(./images/bg.jpg);
+  }
+  #input-area{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+  }
+  #input{
+    width: 100%;
+  }
+</style>
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- font awesome link -->
 <script src="https://kit.fontawesome.com/0d7f844348.js" crossorigin="anonymous"></script>
@@ -193,6 +209,43 @@
             
           </div>
          </div>
+
+         <!-- portfolio section -->
+
+
+         <!-- News section -->
+
+
+         <!-- discuss section -->
+
+         <div class="discuss-area bg-center bg-no-repeat bg-cover">
+          
+          <div class="hero block text-center px-32 pt-20">
+            <button class="btn bg-white rounded-3xl text-xl "><i class="fa-solid fa-arrow-right"></i>View Details</button>
+          <div class="hero-content text-center">
+            <div class="w-2/3">
+              <h1 class="text-5xl font-bold">Our Works Process</h1>
+              <p class="py-6">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- input field -->
+
+        <div id="input-area" class="input-area w-2/3 pb-20  mx-auto">
+          <input id="input" type="text" placeholder="First Name*" class="input input-bordered rounded-3xl" />
+          <input id="input" type="text" placeholder="Last Name*" class="input input-bordered rounded-3xl" />
+          <input id="input" type="text" placeholder="Phone Number*" class="input input-bordered rounded-3xl" />
+          <input id="input" type="text" placeholder="Email Number*" class="input input-bordered rounded-3xl" />
+          <!-- <input type="text" placeholder="Write your message here" class="input input-bordered w-full text-start align-top col-span-2 h-36" /> -->
+          <textarea class="textarea textarea-bordered col-span-2 h-40" placeholder="Write your message here"></textarea>
+          <a class="btn bg-butten-primary rounded-3xl col-span-2">Send Mail<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1 rounded-full"></i></a>
+        </div>
+        
+        
+       </div>
          
         
       </main>
