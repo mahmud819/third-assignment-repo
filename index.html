@@ -19,6 +19,14 @@
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
   }
+  @media screen and (max-width:640px) {
+    #input-area{
+      grid-template-columns: repeat(1,1fr);
+    }
+    #input{
+      width: 100%;
+    }
+  }
   
   
 </style>
@@ -48,13 +56,13 @@
 </head>
 <body>
     <!-- header section -->
-     <header class="md:px-32 mb-20">
+     <header class="px-6 m-10 md:m-16 md:px-32">
       <!-- nav area -->
-        <div class="navbar hidden justify-between">
+        <div class="navbar justify-between ">
             <div class="">
               <a class="btn btn-ghost text-xl"><i class="fa-solid fa-arrow-right -rotate-45 bg-butten-primary p-1 rounded-full"></i>Rinterio</a>
             </div>
-            <div class="navbar-center flex sm : hidden lg:block">
+            <div class="navbar-center hidden block md:block">
               <ul class="menu menu-horizontal px-1 ">
                 <li><a>Home</a></li>
                 <li><a href="">Services</a></li>
@@ -65,8 +73,8 @@
               </ul>
               
             </div>
-            <i class="fa-solid fa-bars lg:hidden sm:block "></i>
-            <div class="">
+            <i class="fa-solid fa-bars block md:hidden "></i>
+            <div class="hidden md:block">
               <i class="fa-solid fa-magnifying-glass p-2 "></i>
               <i class="fa-solid fa-cart-shopping p-3 bg-bg-icon"></i>
               <a class="btn bg-butten-primary rounded-3xl">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-black p-1 rounded-full text-white"></i></a>
@@ -400,8 +408,8 @@
 
         <!-- input field -->
 
-        <div id="" class="input-area w-full mx-4 grid grid-cols-1  gap-4 pb-20 overflow-hidden hidden  md:mx-auto md:w-2/3 md:grid-cols-2">
-          <input id="input" type="text" placeholder="First Name*" class="input w-full input-bordered rounded-3xl " />
+        <div id="input-area" class="input-area w-full mx-4 grid grid-cols-1  gap-4 pb-20 overflow-hidden  md:mx-auto md:w-2/3 md:grid-cols-2">
+          <input id="input" type="text" placeholder="First Name*" class="input w-full input-bordered rounded-3xl grid-flow-col auto-cols-max" />
           <input id="input" type="text" placeholder="Last Name*" class="input w-full input-bordered rounded-3xl" />
           <input id="input" type="text" placeholder="Phone Number*" class="input input-bordered rounded-3xl" />
           <input id="input" type="text" placeholder="Email Number*" class="input input-bordered rounded-3xl" />
