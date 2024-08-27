@@ -14,7 +14,7 @@
   .discuss-area{
     background-image: url(./images/bg.jpg);
   }
-  #input-area{
+  /* #input-area{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1rem;
@@ -26,7 +26,7 @@
     #input{
       width: 100%;
     }
-  }
+  } */
   
   
 </style>
@@ -408,12 +408,12 @@
 
         <!-- input field -->
 
-        <div id="input-area" class="input-area w-full mx-4 grid grid-cols-1  gap-4 pb-20 overflow-hidden  md:mx-auto md:w-2/3 md:grid-cols-2">
-          <input id="input" type="text" placeholder="First Name*" class="input w-full input-bordered rounded-3xl grid-flow-col auto-cols-max" />
-          <input id="input" type="text" placeholder="Last Name*" class="input w-full input-bordered rounded-3xl" />
-          <input id="input" type="text" placeholder="Phone Number*" class="input input-bordered rounded-3xl" />
-          <input id="input" type="text" placeholder="Email Number*" class="input input-bordered rounded-3xl" />
-          <textarea class="textarea textarea-bordered col-span-1 h-40 md:col-span-2" placeholder="Write your message here"></textarea>
+        <div id="" class="input-area w-full grid grid-cols-1  gap-4 px-4 pb-20  md:mx-auto md:w-2/3 md:grid-cols-2">
+          <input id="input" type="text" placeholder="First Name*" class="input w-full input-bordered rounded-3xl col-span-2 md:col-span-1" />
+          <input id="input" type="text" placeholder="Last Name*" class="input w-full input-bordered rounded-3xl col-span-2 md:col-span-1" />
+          <input id="input" type="text" placeholder="Phone Number*" class="input input-bordered rounded-3xl col-span-2 md:col-span-1" />
+          <input id="input" type="text" placeholder="Email Number*" class="input input-bordered rounded-3xl col-span-2 md:col-span-1" />
+          <textarea class="textarea textarea-bordered w-full h-40 md:col-span-2" placeholder="Write your message here"></textarea>
           <a class="btn bg-butten-primary rounded-3xl col-span-2">Send Mail<i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-1 rounded-full"></i></a>
         </div> 
        </div>
